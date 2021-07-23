@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 
+//Prop types
+import PropTypes from 'prop-types';
 /*
 class Componente extends Component{
     render(){
@@ -19,6 +21,8 @@ function One(props){
                     console.log(e,i);
                     return <li key={i}>{e.toUpperCase()}</li>;
                 })}
+
+                {props.my_fun()}
             </ul>
         </div>
     )
@@ -26,5 +30,10 @@ function One(props){
 
 One.defaultProps={
     name_df:'Nombre por defecto'
+}
+
+//Prop types
+One.propTypes={
+    my_age:PropTypes.number
 }
 export default One;

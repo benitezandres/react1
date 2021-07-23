@@ -21,7 +21,16 @@ function App() {
           Learn React
         </a>
       </header>
-      <One msg="Saludos desde props" state={true} fruits={['pera','manzana','mora']}></One>
+      <One 
+      msg="Saludos desde props" 
+      state={true} 
+      my_age={"1"}
+      fruits={['pera','manzana','mora']}
+      my_fun={()=>{
+        console.log('Function from parent');
+      }}
+      
+      ></One>
     </div>
   );
 }
