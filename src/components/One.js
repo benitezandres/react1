@@ -8,13 +8,14 @@ class Componente extends Component{
 }
 */
 
-function Componente(props){
+function One(props){
     return(
         <div>
             <h1>{props.msg}</h1>
-            <h2>{props.nombre_defecto}</h2>
+            <h2>{props.name_df}</h2>
             <ul>
-                {props.arreglo.map((e,i)=>{
+                {/*Render props sent from parent*/}
+                {props.fruits.map((e,i)=>{
                     console.log(e,i);
                     return <li key={i}>{e.toUpperCase()}</li>;
                 })}
@@ -23,7 +24,7 @@ function Componente(props){
     )
 }
 
-Componente.defaultProps={
-    nombre_defecto:'Nombre por defecto'
+One.defaultProps={
+    name_df:'Nombre por defecto'
 }
-export default Componente;
+export default One;

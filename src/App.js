@@ -2,7 +2,7 @@ import React from 'react'
 import logo from './logo.svg';
 import './App.css';
 //Import component
-import Componente from './components/Componente';
+import One from './components/One';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Componente msg="Saludos desde props" estado={true} arreglo={['pera','manzana','mora']}></Componente>
+      <One msg="Saludos desde props" state={true} fruits={['pera','manzana','mora']}></One>
     </div>
   );
 }
