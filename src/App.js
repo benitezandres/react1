@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 //Import component
 import One from './components/One';
+import ComponentState from './components/ComponentState'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       }}
       
       ></One>
+      <ComponentState msg="Message from parent"></ComponentState>
     </div>
   );
 }
