@@ -19,12 +19,13 @@ export default class ComponentState extends Component{
             counter : 0
         }
 
+        /*
         setInterval(()=>{
             this.setState({
                 counter: this.state.counter + 1
             });
         },1000);
-
+        */
     }
     render(){
         console.log(this.props.msg);

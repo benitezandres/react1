@@ -4,6 +4,7 @@ import './App.css';
 //Import component
 import One from './components/One';
 import ComponentState from './components/ComponentState'
+import RenderingConditional from './components/RenderConditional';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       
       ></One>
       <ComponentState msg="Message from parent"></ComponentState>
+      <RenderingConditional></RenderingConditional>
     </div>
   );
 }
