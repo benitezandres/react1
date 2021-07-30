@@ -1,0 +1,34 @@
+{
+    "frameworks":[
+            {
+                "id": 1,
+                "name":"React",
+                "web":"www.react.com"
+            },
+            {
+                "id": 2,
+                "name":"Angular",
+                "web":"www.angulat.com"
+            },
+            {
+                "id": 3,
+                "name":"Vue JS",
+                "web":"www.vuejs.com"
+            },
+            {
+                "id": 4,
+                "name":"Polimer",
+                "web":"www.polimer.com"
+            },
+            {
+                "id": 5,
+                "name":"jQuery",
+                "web":"www.jquery.com"
+            },
+            {
+                "id": 6,
+                "name":"Ember",
+                "web":"www.ember.com"
+            }
+    ]
+}
