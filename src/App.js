@@ -9,6 +9,7 @@ import RenderElement from './components/RenderElement';
 import ComponentEvent from './components/ComponentEvent';
 import ComponentEventES7 from './components/ComponentEventES7';
 
+import ComponentEventNew from './components/ComponentEventNew';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       <RenderElement></RenderElement>
       <ComponentEvent></ComponentEvent>
       <ComponentEventES7></ComponentEventES7>
+      <ComponentEventNew></ComponentEventNew>
     </div>
   );
 }
