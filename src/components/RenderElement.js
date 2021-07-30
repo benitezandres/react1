@@ -34,10 +34,10 @@ export default class RenderElement extends Component{
                 }
                 <br/>
                 {
-                    data.frameworks.map((ele)=>{
+                    data.frameworks.map((ele,index)=>{
                         return(
-                            <div>
-                                <ElementoLista ele={ele}></ElementoLista>
+                            <div id="main" key={index}>
+                                <ElementoLista ele={ele} key={index}></ElementoLista>
                                 
                             </div>
                         )
