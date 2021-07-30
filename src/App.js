@@ -7,6 +7,7 @@ import ComponentState from './components/ComponentState'
 import RenderingConditional from './components/RenderConditional';
 import RenderElement from './components/RenderElement';
 import ComponentEvent from './components/ComponentEvent';
+import ComponentEventES7 from './components/ComponentEventES7';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <RenderingConditional></RenderingConditional>
       <RenderElement></RenderElement>
       <ComponentEvent></ComponentEvent>
+      <ComponentEventES7></ComponentEventES7>
     </div>
   );
 }
