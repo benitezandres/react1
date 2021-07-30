@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 
-
+/*
 function ComponentButton(props){
     return(
         
@@ -10,6 +10,18 @@ function ComponentButton(props){
         </div>
     )
 }
+*/
+//This make the component reusable
+const ComponentButton = (props) =>{
+    return(
+        
+        <div>
+            <br></br>
+            <button onClick={props.event1}>Component Button</button>
+        </div>
+    )
+}
+
 export default class ComponentEventNew extends Component{
     
     constructor(props){
