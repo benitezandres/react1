@@ -12,6 +12,7 @@ import ComponentEventES7 from './components/ComponentEventES7';
 import ComponentEventNew from './components/ComponentEventNew';
 import CommunicationParent from './components/CommponentComunication';
 import ComponentLifeCycle from './components/ComponentLifeCycle';
+import ComponentAjax from './components/ComponentAjax';
 
 function App() {
   return (
@@ -48,7 +49,7 @@ function App() {
       <ComponentEventNew></ComponentEventNew>
       <CommunicationParent></CommunicationParent>
       <ComponentLifeCycle></ComponentLifeCycle>
-
+      <ComponentAjax></ComponentAjax>
     </div>
   );
 }
