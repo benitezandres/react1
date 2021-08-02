@@ -5,8 +5,8 @@ function Pokemon(props){
         <Fragment>
             <h2>Pokemon</h2>
             <figure>
-                <img src="test.jpg"></img>
-                <figcaption>Pokemon name</figcaption>
+                <img src={props.avatar}></img>
+                <figcaption>{props.name}</figcaption>
             </figure>
         </Fragment>
     )
@@ -24,12 +24,30 @@ class ComponentAjax extends Component{
         let url = 'https://pokeapi.co/api/v2/pokemon';
 
         fetch(url).then((res)=>{
-            console.log(res);
+            //console.log(res);
             return res.json();
         }).then((data)=>{
-            console.log(data);
+            //console.log(data);
             data.results.forEach(el =>{
-                console.log(el);
+                //console.log(el);
+                fetch(el.url).then((resp)=>{
+                    return resp.json();
+                }).then((data)=>{
+                    //console.log(data);
+                    let pokemon = {
+                        id:data.id,
+                        name:data.name,
+                        avatar:data.sprites.front_default
+                    }
+                    let pokemons = [...this.state.pokemons,pokemon];
+                    //pokemons[data.id] = pokemon;
+                    //update state
+                    this.setState({
+                        pokemons:pokemons
+                    })
+                    console.log(pokemons);
+
+                });
             });
         });
     }
@@ -38,6 +56,13 @@ class ComponentAjax extends Component{
         return(
             <Fragment>
                 <h1>Component Ajax</h1>
+               {this.state.pokemons.length === 0 ? (
+               <h3>Cargando</h3> 
+               ) : (
+                    this.state.pokemons.map((ele)=>{
+                        return <Pokemon key={ele.id} name={ele.name} avatar={ele.avatar}></Pokemon>
+                    })
+               )}
             </Fragment>
         )
     }
