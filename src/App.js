@@ -11,6 +11,7 @@ import ComponentEventES7 from './components/ComponentEventES7';
 
 import ComponentEventNew from './components/ComponentEventNew';
 import CommunicationParent from './components/CommponentComunication';
+import ComponentLifeCycle from './components/ComponentLifeCycle';
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
       <ComponentEventES7></ComponentEventES7>
       <ComponentEventNew></ComponentEventNew>
       <CommunicationParent></CommunicationParent>
+      <ComponentLifeCycle></ComponentLifeCycle>
+
     </div>
   );
 }
