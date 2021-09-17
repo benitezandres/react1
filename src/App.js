@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header" className="hidden">
+        
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -31,6 +32,7 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* 
       <One 
       msg="Saludos desde props" 
       state={true} 
@@ -50,6 +52,7 @@ function App() {
       <CommunicationParent></CommunicationParent>
       <ComponentLifeCycle></ComponentLifeCycle>
       <ComponentAjax></ComponentAjax>
+      */}
     </div>
   );
 }
