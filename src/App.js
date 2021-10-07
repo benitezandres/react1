@@ -14,12 +14,16 @@ import CommunicationParent from './components/CommponentComunication';
 import ComponentLifeCycle from './components/ComponentLifeCycle';
 import ComponentAjax from './components/ComponentAjax';
 
+//Functional
+import ContadorFun from './components/ContatorFun';
+import ScrollHooks from './components/ScrollHooks';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header" className="hidden">
         
-        <img src={logo} className="App-logo" alt="logo" />
+        {/*<img src={logo} className="App-logo" alt="logo" /> */}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -52,7 +56,10 @@ function App() {
       <CommunicationParent></CommunicationParent>
       <ComponentLifeCycle></ComponentLifeCycle>
       <ComponentAjax></ComponentAjax>
+      <ContadorFun></ContadorFun>
       */}
+
+      <ScrollHooks></ScrollHooks>
     </div>
   );
 }
